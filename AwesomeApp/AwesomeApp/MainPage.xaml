@@ -5,10 +5,14 @@
              x:Class="AwesomeApp.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
+        <!-- note: I used Ctrl+Space while editing Label options to see allowed values -->
         <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+          HorizontalOptions="Start"
+          VerticalOptions="StartAndExpand">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="WelcomeLabel_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
 
         <Button Text="Click me" Clicked="Button_Clicked" />
     </StackLayout>

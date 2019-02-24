@@ -23,5 +23,14 @@ namespace AwesomeApp
             count++;
             ((Button)sender).Text = $"You clicked {count} times.";
         }
+
+        private void WelcomeLabel_Tapped(object sender, EventArgs e)
+        {
+            // google for "xaml label clicked", https://www.google.com/search?client=firefox-b-1-d&q=xaml+label+clicked
+            // visit result "Click Label - Xamarin Community Forums", https://forums.xamarin.com/discussion/82190/click-label
+            // follow link in answer, scroll down to comment with code snippet, https://forums.xamarin.com/discussion/comment/60564/#Comment_60564
+
+            ((Label)sender).Text += "!";
+        }
     }
 }
